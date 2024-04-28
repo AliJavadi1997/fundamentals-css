@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 200vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100vh;
+  width: 40%;
+  margin: 0 auto;
+}
+
+#num1 {
+  background-color: palegoldenrod;
+  padding: 20px;
+}
+
+#num2 {
+  background-color: aliceblue;
+  padding: 20px;
+  width: 100%;
+}
+
+.container2 {
+  background-color: beige;
+  margin: 0 auto;
+  height: 100vh;
+  width: 20%;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  background-color: paleturquoise;
+}
