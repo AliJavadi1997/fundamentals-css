@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.relative-position .parent {
+  margin: 100px auto;
+  color: azure;
+  text-align: center;
+  background-color: deepskyblue;
+  opacity: 0.4;
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  box-shadow: 10px 10px 30px 10px #acacac;
+}
+
+.relative-position .child {
+  background-color: darkblue;
+  opacity: 0.75;
+  color: azure;
+  padding: 20px;
+  position: relative;
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  margin: 0 auto;
+  animation: push 5s infinite linear;
+  box-shadow: 10px 10px 30px 10px #00000085;
+}
+
+@keyframes push {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 50px;
+  }
+  50% {
+    top: 50px;
+    left: 50px;
+  }
+  75% {
+    top: 50px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.absolute-position .parent {
+  margin: 0 auto;
+  width: 30%;
+  padding: 200px;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.absolute-position .absolute {
+  background-color: violet;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 1px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.absolute-position .static-box {
+  background-color: orange;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 1px;
+}
+
+.fixed-position .parent {
+  margin: auto;
+  width: 40%;
+  background-color: rgb(167, 167, 167);
+  padding: 50px;
+}
+
+.fixed-position .child {
+  width: 90%;
+  padding: 50px;
+  position: fixed;
+  background-color: pink;
+  border: 1px solid red;
+  box-shadow: 10px 10px 20px rgb(134, 126, 126);
+  border-radius: 5px;
+}
+
+.sticky {
+  position: sticky;
+  padding: 80px;
+  color: aliceblue;
+  background-color: rgb(97, 171, 171);
+  width: 20%;
+  bottom: 100px;
+}
