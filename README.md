@@ -1,4 +1,4 @@
-# fundamentals css
+# Fundamentals CSS
 
 This repository documents my journey learning HTML and CSS. I've been developing a method to learn and practice these languages effectively. While this method may not work for everyone, particularly those with different backgrounds, it's built from the perspective of a former designer pursuing a computer engineering degree.
 
