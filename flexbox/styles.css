@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.flex-nowrap {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.flex-nowrap .parent {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(242, 126, 126);
+  width: 30%;
+  padding: 50px;
+  margin: auto;
+}
+
+.flex-nowrap .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-wrap {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.flex-wrap .parent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(242, 126, 126);
+  width: 30%;
+  padding: 50px;
+  margin: auto;
+}
+
+.flex-wrap .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-wrapreverse {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.flex-wrapreverse .parent {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(242, 126, 126);
+  width: 30%;
+  padding: 50px;
+  margin: auto;
+}
+
+.flex-wrapreverse .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-flow {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.flex-flow .parent {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(242, 126, 126);
+  height: 500px;
+  width: 200px;
+  padding: 50px;
+  margin: auto;
+}
+
+.flex-flow .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.align-content {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.align-content .parent {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background-color: rgb(242, 126, 126);
+  width: 30%;
+  height: 300px;
+  margin: auto;
+}
+
+.align-content .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-order {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.flex-order .parent {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(242, 126, 126);
+  width: 50%;
+  height: 300px;
+  margin: auto;
+}
+
+.flex-order .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-order .parent .child:nth-child(0) {
+  order: 2;
+}
+
+.flex-order .parent .child:nth-child(1) {
+  order: 1;
+}
+
+.flex-grow {
+  width: 100%;
+  height: 30%;
+  margin: 20px;
+}
+
+.flex-grow .parent {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(242, 126, 126);
+  width: 50%;
+  height: 300px;
+  margin: auto;
+}
+
+.flex-grow .parent .child {
+  background-color: rgb(168, 120, 214);
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-grow .parent .child:nth-child(4) {
+  flex-grow: 2;
+}
